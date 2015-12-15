@@ -6,25 +6,9 @@ import random
 import os 
 import nltk
 import re
-"""
-def NLTK_model():
-    dirname = "mononoke_out"
-    moro_path = os.path.join(dirname, "モロ.txt")
-    f = open(moro_path, "rb")
-    data = f.read()
-    f.close()
-
-    mt = MeCab.Tagger("-Owakati")
-    wordlist = mt.parse(data)
-    print wordlist
 
 
-NLTK_model()
-"""
-
-
-
-def Mecab_file():
+def bot_sentence():
 	dirname = "mononoke_out"
 	eboshi_path = os.path.join(dirname, "エボシ.txt")
 	f = open(eboshi_path, "rb")
@@ -68,4 +52,4 @@ def Mecab_file():
 
         print eboshi_voice
 
-Mecab_file()
+bot_sentence()
